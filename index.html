@@ -41,7 +41,7 @@ limitations under the License.
         box-shadow: 0 0 5px #8ecaed;
       }
     </style>
-    <script type="text/javascript" src="//www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
     <script type="text/javascript">
       var applicationID = '5603D233';
       var namespace = 'urn:x-cast:com.google.cast.sample.helloworld';
@@ -118,7 +118,7 @@ limitations under the License.
        * receiver listener during initialization
        */
       function receiverListener(e) {
-        if(e === 'available') {
+        if(e === 'AVAILABLE') {
           appendMessage('receiver found');
         }
         else {
